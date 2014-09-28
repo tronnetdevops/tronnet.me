@@ -1,0 +1,212 @@
+.close-about-me-mixin-frames () {
+	from {
+		opacity: 1;
+		height: 300px;
+		margin-bottom: 25px;
+	}
+	to {
+		opacity: 0;
+		height: 0px;
+		margin-bottom: 5px;
+	}
+}
+
+.open-about-me-mixin-frames () {
+	from {
+		height: 0px;
+		opacity: 0;
+		margin-bottom: 5px;
+	}
+	to {
+		opacity: 1;
+		height: 300px;
+		margin-bottom: 25px;
+	}
+}
+
+@-webkit-keyframes close-about-me-section {.close-about-me-mixin-frames;} /* Chrome */
+@-moz-keyframes close-about-me-section {.close-about-me-mixin-frames;} /* Firefox */
+@-ms-keyframes close-about-me-section {.close-about-me-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes close-about-me-section {.close-about-me-mixin-frames;} /* Opera */
+@keyframes close-about-me-section {.close-about-me-mixin-frames;}
+
+@-webkit-keyframes open-about-me-section {.open-about-me-mixin-frames;} /* Chrome */
+@-moz-keyframes open-about-me-section {.open-about-me-mixin-frames;} /* Firefox */
+@-ms-keyframes open-about-me-section {.open-about-me-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes open-about-me-section {.open-about-me-mixin-frames;} /* Opera */
+@keyframes open-about-me-section {.open-about-me-mixin-frames;}
+
+
+.expand-middle-shift-left-mixin-frames () {
+	from {
+		opacity: 1;
+		left: 0px;
+		height: 190px;
+	}
+	to {
+		opacity: 0;
+		left: -300px;
+		height: 0px;
+		margin: 0px;
+	}
+}
+
+.expand-middle-shift-middle-mixin-frames () {
+	from {
+		width: 31.623931624%;
+		margin-left: 2.564102564%;
+		height: 190px;
+		left: 360px;
+	}
+	to {
+		width: 100%;
+		margin: 0px;
+		height:250px;
+		left:0px;
+	}
+}
+
+.expand-middle-shift-right-mixin-frames () {
+	from {
+		opacity: 1;
+		left: 720px;
+		height: 190px;
+	}
+	to {
+		opacity: 0;
+		left: 1200px;
+		height: 0px;
+		margin: 0px;
+	}
+}
+
+@-webkit-keyframes expand-middle-shift-right {.expand-middle-shift-right-mixin-frames;} /* Chrome */
+@-moz-keyframes expand-middle-shift-right {.expand-middle-shift-right-mixin-frames;} /* Firefox */
+@-ms-keyframes expand-middle-shift-right {.expand-middle-shift-right-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes expand-middle-shift-right {.expand-middle-shift-right-mixin-frames;} /* Opera */
+@keyframes expand-middle-shift-right {.expand-middle-shift-right-mixin-frames;}
+
+@-webkit-keyframes expand-middle-shift-middle {.expand-middle-shift-middle-mixin-frames;} /* Chrome */
+@-moz-keyframes expand-middle-shift-middle {.expand-middle-shift-middle-mixin-frames;} /* Firefox */
+@-ms-keyframes expand-middle-shift-middle {.expand-middle-shift-middle-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes expand-middle-shift-middle {.expand-middle-shift-middle-mixin-frames;} /* Opera */
+@keyframes expand-middle-shift-middle {.expand-middle-shift-middle-mixin-frames;}
+
+@-webkit-keyframes expand-middle-shift-left {.expand-middle-shift-left-mixin-frames;} /* Chrome */
+@-moz-keyframes expand-middle-shift-left {.expand-middle-shift-left-mixin-frames;} /* Firefox */
+@-ms-keyframes expand-middle-shift-left {.expand-middle-shift-left-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes expand-middle-shift-left {.expand-middle-shift-left-mixin-frames;} /* Opera */
+@keyframes expand-middle-shift-left {.expand-middle-shift-left-mixin-frames;}
+
+.expand-neutral-shift-left-mixin-frames () {
+	from {
+		opacity: 0;
+		left: -300px;
+		height: 0px;
+	}
+	to {
+		opacity: 1;
+		left: 0px;
+		height: 190px;
+		margin: 0px;
+	}
+}
+
+.expand-neutral-shift-middle-mixin-frames () {
+	from {
+		width: 100%;
+		left: 0px;
+		height:250px;
+	}
+	to {
+		width: 31.623931624%;
+		left: 360px;
+		margin: 0px;
+		height: 190px;
+	}
+}
+
+.expand-neutral-shift-right-mixin-frames () {
+	from {
+		opacity: 0;
+		left: 1200px;
+		height: 0px;
+	}
+	to {
+		opacity: 1;
+		left: 720px;
+		margin: 0px;
+		height: 190px;
+	}
+}
+
+@-webkit-keyframes expand-neutral-shift-right {.expand-neutral-shift-right-mixin-frames;} /* Chrome */
+@-moz-keyframes expand-neutral-shift-right {.expand-neutral-shift-right-mixin-frames;} /* Firefox */
+@-ms-keyframes expand-neutral-shift-right {.expand-neutral-shift-right-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes expand-neutral-shift-right {.expand-neutral-shift-right-mixin-frames;} /* Opera */
+@keyframes expand-neutral-shift-right {.expand-neutral-shift-right-mixin-frames;}
+
+@-webkit-keyframes expand-neutral-shift-middle {.expand-neutral-shift-middle-mixin-frames;} /* Chrome */
+@-moz-keyframes expand-neutral-shift-middle {.expand-neutral-shift-middle-mixin-frames;} /* Firefox */
+@-ms-keyframes expand-neutral-shift-middle {.expand-neutral-shift-middle-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes expand-neutral-shift-middle {.expand-neutral-shift-middle-mixin-frames;} /* Opera */
+@keyframes expand-neutral-shift-middle {.expand-neutral-shift-middle-mixin-frames;}
+
+@-webkit-keyframes expand-neutral-shift-left {.expand-neutral-shift-left-mixin-frames;} /* Chrome */
+@-moz-keyframes expand-neutral-shift-left {.expand-neutral-shift-left-mixin-frames;} /* Firefox */
+@-ms-keyframes expand-neutral-shift-left {.expand-neutral-shift-left-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes expand-neutral-shift-left {.expand-neutral-shift-left-mixin-frames;} /* Opera */
+@keyframes expand-neutral-shift-left {.expand-neutral-shift-left-mixin-frames;}
+
+
+.open-container-mixin-frames () {
+	from {
+		height:190px;
+	}
+	to {
+		height:250px;
+	}
+}
+
+.close-container-mixin-frames () {
+	from {
+		height:250px;
+	}
+	to {
+		height:190px;
+	}
+}
+
+@-webkit-keyframes open-matrix-container {.open-container-mixin-frames;} /* Chrome */
+@-moz-keyframes open-matrix-container {.open-container-mixin-frames;} /* Firefox */
+@-ms-keyframes open-matrix-container {.open-container-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes open-matrix-container {.open-container-mixin-frames;} /* Opera */
+@keyframes open-matrix-container {.open-container-mixin-frames;}
+
+@-webkit-keyframes close-matrix-container {.close-container-mixin-frames;} /* Chrome */
+@-moz-keyframes close-matrix-container {.close-container-mixin-frames;} /* Firefox */
+@-ms-keyframes close-matrix-container {.close-container-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes close-matrix-container {.close-container-mixin-frames;} /* Opera */
+@keyframes close-matrix-container {.close-container-mixin-frames;}
+
+
+.under-construction-blink-mixin-frames () {
+	0% {
+		color: rgba(235, 0, 0, 1);
+	}
+	50% {
+		color: rgba(235, 0, 0, 1);
+	}
+	70% {
+		color: rgba(235, 0, 0, 0.4);
+	}
+	100% {
+		color: rgba(235, 0, 0, 1);
+	}
+}
+
+@-webkit-keyframes under-construction-blink-animation {.under-construction-blink-mixin-frames;} /* Chrome */
+@-moz-keyframes under-construction-blink-animation {.under-construction-blink-mixin-frames;} /* Firefox */
+@-ms-keyframes under-construction-blink-animation {.under-construction-blink-mixin-frames;} /* Safari and Chrome */
+@-o-keyframes under-construction-blink-animation {.under-construction-blink-mixin-frames;} /* Opera */
+@keyframes under-construction-blink-animation {.under-construction-blink-mixin-frames;}

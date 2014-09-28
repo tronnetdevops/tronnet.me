@@ -1,0 +1,29 @@
+<script type="text/x-handlebars" data-template-name="tronnet-modal-alert">	
+	<div class="tn-modal-mask-alert row-fluid" {{action hide target="TronnetApp.modals.alert"}}>
+		<div class="tn-modal-alert-container span12">
+			<div class="row-fluid">
+				<div class="span4"></div>
+				<div class="tn-modal-alert-content span4" {{action insideClick}}>
+					<div class="tn-modal-alert-title-bar well sidebar-nav navbar-inner">
+						<div>
+							<h2 class="tn-modal-alert-icon"><i class="icon-exclamation-sign"></i></h2>
+							<h2 class="tn-modal-alert-title">{{title}}</h2>
+							<h4 class="tn-modal-alert-exit" {{action hide target="TronnetApp.modals.alert"}}><i class="icon-remove"></i></h2>
+						</div>
+					</div>
+					<div class="tn-modal-alert-message well sidebar-nav">
+						<div>
+							{{test}}
+							{{#if customView}}
+								{{view customView}}
+							{{else}}
+								<p>{{message}}</p>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				<div class="span4"></div>
+			</div>
+		</div>
+	</div>
+</script>

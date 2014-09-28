@@ -1,0 +1,106 @@
+<script type="text/x-handlebars" data-template-name="tronnet-main-section-home">	
+	<div class="container">
+
+		<!-- Main hero unit for a primary marketing message or call to action -->
+		<div class="hero-unit">
+			<h1>Hi, welcome to tronnet!</h1>
+			<p>Here, you can explore some of my projects, credentials, resume and blog entries.</p>
+			<p><a href="#about" class="btn btn-primary btn-large" data-goto="about" {{action loadPage}}>Learn more &raquo;</a></p>
+		</div>
+
+		<div class="row">
+			<div class="span4">
+				<h2>Who am I?</h2>
+				<p>A developer, musician, chef impersonator and many things. Get to know me a little more about me.</p>
+				<p><a href="#about" class="btn" data-goto="about" {{action loadPage}}>About &raquo;</a></p>
+			</div>
+
+			<div class="span4">
+				<h2>My blog</h2>
+				<p>Some of my muses and ramblings on potentially multitudes of topics that might spark some interest.</p>
+				<p><a href="/blog/" class="btn">Check it out &raquo;</a></p>
+			</div>
+
+			<div class="span4">
+				<h2>Git repository</h2>
+				<p>This is my GitHub account which will eventually contain projects I am working on and useful snippets of code.</p>
+				<p><a class="btn" href="https://github.com/tronhammer">View repositories &raquo;</a></p>
+			</div>
+		</div>
+		
+		<div style="height: 25px;"></div>
+		
+		  
+	</div> <!-- /container -->
+	
+	<div class="navbar" style="margin-bottom:0px;">
+		<div class="navbar-inner" style="border-radius:0px;height:550px">
+			<div class="container">
+				
+				<div style="height: 50px;"></div>
+				
+				<div class="row-fluid">
+					<div class="span1"></div>
+				
+					<div class="span4">
+						<div class="well sidebar-nav">
+							<h2>Resume</h2>
+							<p>This is a stylized resume that I built out for convenience.  
+								There is also a more customary version <a href="assets/files/Resume.pdf">available in PDF format</a></p>
+							<p><a href="#/about" class="btn" data-goto="resume" {{action loadPage}}>View details &raquo;</a></p>
+						</div>
+					</div>
+					
+					<div class="span1"></div>
+					
+					<div class="span4">
+						<h2>Hobbies</h2>
+						<p>I&apos;ve got tons of interests, here are some links to blog posts and presentation pages.</p>
+						<ul>
+							<li><a href="#/resume" data-goto="resume" {{action loadPage}}>Development</a></li>
+							<li><a href="http://soundcloud.com/tronhammer">Music</a></li>
+							<li><a href="" data-goto="underconstruction" {{action loadPage}}>Philosophy</a></li>
+							<li><a href="http://www.npr.org/blogs/money/">Economics</a></li>
+							<li><a href="" data-goto="underconstruction" {{action loadPage}}>Politics</a></li>
+						</ul>
+					</div>
+					
+					<div class="span1"></div>
+				</div>
+				
+				<div style="height: 30px;"></div>
+				
+				
+				<div class="row-fluid">
+					<div class="span1"></div>
+				
+					<div class="span10">
+						<div class="well sidebar-nav" style="height:200px;">
+							<h2>Recent Activity</h2>
+							<p>This will eventually be a feed on my latest activity. I plan to have it hooked up to my blog, as well as 
+								git commits, site updates, general events and possibly third party integrations to twitter and facebook.</p>
+							<p>Until that comes into fruition, this space will be a bit sparse.<p>
+							<p>Also, there will eventually be an RSS feed to this which will also contain articles I find interesting 
+								through trolling the web, and hey, you might find them somewhat titalating yourself, so feel free 
+								to nab a feed.</p>
+							<p><a href="/blog/" class="btn">Updates &raquo;</a></p>
+						</div>
+					</div>
+					
+					<div class="span1"></div>
+					
+				</div>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	
+	<div class="navbar navbar-fixed-bottom">
+		<div class="navbar-inner">
+			<div class="container" style="width:100%;">
+				<footer style="margin-top: 12px;margin-left: 5px;">
+					<p>&copy; Tronnet 2012</p>
+				</footer>
+			</div>
+		</div>
+	</div> <!-- /container -->
+</script>

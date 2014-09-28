@@ -1,0 +1,29 @@
+@import "mixins.less";
+@import "fa-font-awesome.less";
+
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+
+.under-construction-warning{
+	margin-top:10px;
+	margin-left:250px;
+	
+	.under-construction-title{
+		color: red;
+		font-weight:bold;
+		
+		&.under-construction-blink{
+			.animation-contineous(under-construction-blink-animation, 8s);
+		}
+	}
+}
+
+.social-media-connections{
+	margin-top:13px;
+	margin-left:450px;
+	float:right;
+}

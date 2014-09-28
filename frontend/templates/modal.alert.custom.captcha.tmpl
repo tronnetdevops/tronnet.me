@@ -1,0 +1,17 @@
+<script type="text/x-handlebars" data-template-name="tronnet-modal-alert-custom-captcha">	
+	<p>
+		{{#if message}}
+			{{message}}
+		{{else}}
+			I&apos;m still not sure you&apos;re a human... Just to be sure, answer this question just so I can be sure.
+		{{/if}}
+	</p>
+	<div class="row-fluid">
+		<div class="span8">
+			{{question}}
+		</div>
+		<div class="span4">
+			<input name="is_human_question" style="width:105px"/>
+		</div>
+	</div>
+</script>

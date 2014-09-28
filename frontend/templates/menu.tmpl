@@ -1,0 +1,38 @@
+<script type="text/x-handlebars" data-template-name="tronnet-menu-main">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#/home" data-goto="home" {{action loadPage}}>Tronnet</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li {{bindAttr class="TronnetApp.currentPage.is_home:active"}}><a href="#/home" data-goto="home" {{action loadPage}}>Home</a></li>
+						<li {{bindAttr class="TronnetApp.currentPage.is_about:active"}}><a href="#/about" data-goto="about" {{action loadPage}}>About</a></li>
+						<li {{bindAttr class="TronnetApp.currentPage.is_contact:active"}}><a href="#/resume" data-goto="contact" {{action loadPage}}>Contact</a></li>
+						<li class="under-construction-warning">
+							<span class="under-construction-title under-construction-blink">Under Construction!</span>
+						</li>
+					</ul>
+					<ul class="nav" style="float:right;">
+						<li>
+							<a href="http://tronnet.me/blog/?feed=rss2" target="_blank"><i class="icon-rss"></i></a>
+						</li>
+						<li>
+							<a href="http://github.com/tronhammer" target="_blank"><i class="icon-github-sign"></i></a>
+						</li>
+						<li>
+							<a href="http://twitter.com/tronhammer" target="_blank"><i class="icon-twitter-sign"></i></a>
+						</li>
+						<li>
+							<a href="http://linkedin.com/in/smurraysb" target="_blank"><i class="icon-linkedin-sign"></i></a>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+</script>

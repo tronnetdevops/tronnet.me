@@ -1,0 +1,74 @@
+@import "mixins.less";
+
+.container.contact{
+	
+	.tn-contact-primary-form{
+		.tc-contact-message{
+			width:100%;
+			height: 200px;
+		}
+		
+		.tn-contact-form-fields{
+		
+			.tn-contact-field{
+				.tn-contact-field-name{
+
+				}
+
+				.tn-contact-field-value{
+				
+					input{
+					}
+				
+					.icon{
+						background-image: none;
+						font-size: 18px;
+						margin-top: 2px;
+					}
+				}
+			
+				.tn-contact-anti-bot-device{
+				
+					.tc-contact-anti-bot-title{
+						margin-bottom:5px;
+					
+						.tn-contact-anti-bot-info{
+							float:right;
+							font-size: 20px;
+							color: #333;
+							background: whitesmoke;
+							cursor: pointer;
+							margin-top: 8px;
+							margin-right: 8px;
+						
+							&:hover{
+								color: #09C;
+							}
+							&:active{
+								color:#08C;
+							}
+						}
+					}
+				
+					.icon{
+						background-image: none;
+						&.validated{
+							color:green;
+						}
+					}
+				}
+			}
+		
+			.tc-contact-field-valid{
+				font-size: 25px;
+				left: 15px;
+				position: relative;
+			}
+			
+			&.sending{
+				opacity:0.6;
+			}
+		}
+	}
+	
+}

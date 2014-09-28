@@ -1,0 +1,1 @@
+TronnetApp.RouteExtensions.add("home");

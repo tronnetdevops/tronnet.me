@@ -1,0 +1,107 @@
+<script type="text/x-handlebars" data-template-name="tronnet-main-section-about">	
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span3" >
+				<div class="well sidebar-nav">
+					<div class="tn-about-me-avatar">
+						<img src="style/images/wedding.me.jpeg"/>
+					</div>
+					<div class="tn-about-synopsis">
+						<h3>Sean Murray - Developer</h3>
+						<ul>
+							<li><h4><a href="#resume" data-goto="resume" {{action loadPage}}>Resume</a></h4></li>
+							<li><h4><a href="https://github.com/tronhammer" target="_blank">Git Repository</a></h4></li>
+							<li><h4><a href="http://chaolux.bandcamp.com" target="_blank">Bandcamp</a></h4></li>
+							<li><h4><a href="http://soundcloud.com/tronhammer" target="_blank">SoundCloud</a></h4></li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="span9">
+				<div class="hero-unit about-me-sections" style="padding-top:20px;">
+					<h1>a little about me</h1>
+					{{#if is_biophilia_open}}
+						<h2>Biophilia</h2>
+					{{else}}
+						<h2 data-section="biophilia" {{action loadSection}}><a href="javascript:void(0);">Biophilia</a></h2>
+					{{/if}}
+					<div {{bindAttr class=":about-me-section :biophilia is_biophilia_open:about-me-section-opened:about-me-section-closed"}}>
+						<p>&ldquo;Why <i>Tronnet</i>&ldquo; you ask? Well, there&apos;s a bit of a story behind its origin, and that can be shared over a beer 
+							some day, but in short, a lot of my close friends call me <i>tron</i>, so I guess it caught on.  Here I find myself, 8 years later, 
+							with a wide network of friends who know me as <i>tron</i>. So I guess it only seemed natural.</p>
+							
+						<p>I&apos;m {{getCurrentAge}} years old, a developer, musician, psuedo-philosopher and a wanna-be economist with a dash of inventor tendencies. My passion lays in development, 
+							which I&apos;ve been entertaining for a little over 10 years now, but my love is with music, which is almost iconic in the way they 
+							are both so alike. Either way, I have an affinity for tinkering with things, and it seems that those two venues provide the widest 
+							breadth of potential creativity. There are too many subjects I would love to indulge on, but here&apos;s a small portion just to 
+							break the ice.</p>
+					</div>
+					
+					{{#if is_technophilia_open}}
+						<h2>Technophilia</h2>
+					{{else}}
+						<h2 data-section="technophilia" {{action loadSection}}><a href="javascript:void(0);">Technophilia</a></h2>
+					{{/if}}
+					<div {{bindAttr class=":about-me-section :technophilia is_technophilia_open:about-me-section-opened:about-me-section-closed"}}>
+						<p>I&apos;ve been programming since I was about 13, all stemming from wanting to customize a hosted forum I had back in the early 2000s. 
+							From there, I started taking classes at our fine city college when I was a freshman in highschool. During that time, I built out websites 
+							for both personal and freelance work and grew a strong passion for the instant gratification that programming delivered.</p>
+						
+						<p>I was employed as a helpdesk / system admin when I was 15 at Novacoast, and then again as a Developer / IT Consultant when I was 17. 
+							There I gained 6 years of professional software and application development experience on internal systems, enterprise software 
+							and SAAS deployments. I built out invoicing and management applications and was involved in two long term projects that lasted 
+							about 2 years each, were I was exposed to and utilized a plethora of technologies and deployment straties. </p>
+					</div>
+					
+					{{#if is_audiophilia_open}}
+						<h2>Audiophilia</h2>
+					{{else}}
+						<h2 data-section="audiophilia" {{action loadSection}}><a href="javascript:void(0);">Audiophilia</a></h2>
+					{{/if}}
+					<div {{bindAttr class=":about-me-section :audiophilia is_audiophilia_open:about-me-section-opened:about-me-section-closed"}}>
+						<p>Can&apos;t live without it! The one thing that usurps my passion for programming is my love for music. I play guitar, drums and 
+							am always willing to belt out a few chords when requested. This has given me the extreme pleasure to perform for people while  
+							participating in multitude of acts such as Dark Vital Flames, Chao Lux and Full Metal Face Melt, and humbled me by sharing the stage 
+							with such influential bands as Arsis, Nightrage, Abigail Williams, Nekrogoblikon, Firewind, White Wizzard, Decrepit Birth, Kampfar 
+							and more. </p>
+				
+						<p>One of my first acts, Dark Vital Flames, was selected to participate in the final running of a national No Labels Needed contest 
+							and finished out in the top 10 on the list! We&apos;ve played shows all over, but none make par when compared to the madness 
+							we graciously recieved from our own college community in Isla Vista. Currently I&apos;m weilding the axe for Chao Lux, whome 
+							is in the final stages of releasing an album! More to come on that front soon...
+					</div>
+						
+					{{#if is_philosophia_open}}
+						<h2>Philosophia</h2>
+					{{else}}
+						<h2 data-section="philosophia" {{action loadSection}}><a href="javascript:void(0);">Philosophia</a></h2>
+					{{/if}}
+					<div {{bindAttr class=":about-me-section :philosophia is_philosophia_open:about-me-section-opened:about-me-section-closed"}}>
+						<p>I find myself often traversing the realms of philosophy, a bittersweet compromize of fact, hypothesis and outright mystery. Call it 
+							early twenties or a devoutness to truth in combatance to everyday rhetoric and sophistry, but I find a comfort in the unkown as much 
+							as the perception of what is known. In a world where attention spans are deminishing fractiles at the mercy of modern media outlets, 
+							there is much to be desired in how humbling questions unanswered throughout the aeons can be.</p>
+							
+						<p>Although my life will surely involve a tangled web of volition and ambition, I have always come to find that I should end as a philospher. 
+							Perhaps that is the natural end after all, but until that time comes, I think I shall attempt to answer as many of lifes mysteries 
+							as allouted by time.</p>
+					</div>
+				</div>
+			</div>
+		
+		</div> <!-- /container -->
+
+		<div class="navbar navbar-fixed-bottom">
+			<div class="navbar-inner">
+				<div class="container" style="width:100%;">
+					<footer style="margin-top: 12px;margin-left: 5px;">
+						<p>&copy; Tronnet 2012</p>
+					</footer>
+				</div>
+			</div>
+		</div> <!-- /container -->
+	</div>
+</script>

@@ -1,0 +1,63 @@
+@import "mixins.less";
+
+.matrix{
+	overflow: hidden;
+	
+	.matrix-sections{
+		position: relative;
+		height: 190px;
+		margin-bottom: 10px;
+		
+		&.matrix-section-open{
+			.animation(open-matrix-container, 1s);
+		}
+		&.matrix-section-closed{
+			.animation(close-matrix-container, 1s);
+		}
+		
+		.matrix-section{
+			position: absolute;
+			float:none;
+			height: 190px;
+			overflow: hidden;
+			margin: 0px;
+
+			.well{
+				height:100%;
+			}
+
+			&.left{
+				left: 0px;
+				
+				&.matrix-neutral-open{
+					.animation(expand-neutral-shift-right, 1s);
+				}
+				&.matrix-middle-open{
+					.animation(expand-middle-shift-right, 1s);
+				}
+			}
+
+			&.middle{
+				left: 360px;
+				
+				&.matrix-neutral-open{
+					.animation(expand-neutral-shift-middle, 1s);
+				}
+				&.matrix-middle-open{
+					.animation(expand-middle-shift-middle, 1s);
+				}
+			}
+
+			&.right{
+				left: 720px;
+				
+				&.matrix-neutral-open{
+					.animation(expand-neutral-shift-left, 1s);
+				}
+				&.matrix-middle-open{
+					.animation(expand-middle-shift-left, 1s);
+				}
+			}
+		}
+	}
+}

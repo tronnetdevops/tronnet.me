@@ -1,0 +1,114 @@
+<script type="text/x-handlebars" data-template-name="tronnet-main-section-matrix">	
+	<div class="container matrix">
+		<div class="row-fluid">
+		
+			<div class="span12">
+				<!-- Main hero unit for a primary marketing message or call to action -->
+				<div class="hero-unit" style="padding-top:20px;">
+					<h1>my resume</h1>
+					<h2>As Interest Grows</h2>
+					
+					<p>So it sounds like you and I hit it off in the right direction and now you feel like there&apos;s 
+						some chemistry between us, yeah?</p>
+						
+					<p>Understandable, I tend to have that effect on people. Well then, whats better 
+						than <a href="https://www.facebook.com/Tronhammer" target="_blank">facebook</a> lurking 
+						and <a href="http://www.linkedin.com/pub/sean-murray/39/404/29b" target="_blank">linkedin</a> trolling?</p>
+					
+					<p>...must be my resume.  Alright, alright, I&apos;ll make it easy for you.</p>
+					
+					<div style="height:25px;"></div>
+					
+					<div class="row-fluid matrix-sections">
+						<div class="span4 matrix-section left">
+							<div class="well">
+								<h2>Web Development<h2>
+								<h3>Frameworks I&apos;ve manhandled</h3>
+								<ul>
+									<li><h4><a href="">Frontend</a></h4></li>
+									<li><h4><a href="">Backend</a></h4></li>
+									<li><h4><a href="">Deployment</a></h4></li>
+								</ul>
+								<p style="float:right;"><a href="javascript:void(0);" data-section="left" {{action loadSection}} class="btn">Expand &raquo;</a></p>
+							</div>
+						</div>
+
+						<div class="span4 matrix-section middle">
+							<div class="well sidebar-nav">
+							{{#if is_middle_section_open}}
+								<div class="row-fluid">
+									<div class="span4">
+										<h2>Application Development</h2>
+										<h3>Languages I&apos;ve dominated</h3>
+										<ul>
+											<li><h4><a href="">Media Collaboration</a></h4></li>
+											<li><h4><a href="">Synchonization Engine</a></h4></li>
+											<li><h4><a href="">Linux OS</a></h4></li>
+										</ul>
+									</div>
+									<div class="span8">
+										<div style="margin:10px;float:right;">
+											<p><a href="javascript:void(0);" data-section="neutral" {{action loadSection}} class="btn btn-primary">&laquo; Back</a></p>
+										</div>
+									</div>
+								</div>
+							{{else}}
+								<h2>Application Development</h2>
+								<h3>Languages I&apos;ve dominated</h3>
+								<ul>
+									<li><h4><a href="">Media Collaboration</a></h4></li>
+									<li><h4><a href="">Synchonization Engine</a></h4></li>
+									<li><h4><a href="">Linux OS</a></h4></li>
+								</ul>
+								<p style="float:right;"><a href="javascript:void(0);" data-section="middle" {{action loadSection}} class="btn">Expand &raquo;</a></p>
+							{{/if}}
+							</div>
+						</div>
+
+						<div class="span4 matrix-section right">
+							<div class="well">
+								<h2>System Administration</h2>
+								<h3>Products I&apos;ve unleashed</h3>
+								<ul>
+									<li><h4><a href="">Networking</a></h4></li>
+									<li><h4><a href="">Shell scripting</a></h4></li>
+									<li><h4><a href="">Virtualization</a></h4></li>
+								</ul>
+								<p style="float:right;"><a href="javascript:void(0);" data-section="right" {{action loadSection}} class="btn">Expand &raquo;</a></p>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div style="height:25px;"></div>
+					
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="well sidebar-nav">
+								<h2>Professional Experience</h2>
+								<p>I&apos;ve had over 6 years of professional experience in software and application development. 
+									This has ranged from developing management applications on internal systems to architecting 
+									SAAS deployments. Examine my formal resume for more details.</p>
+								
+								<p><a href="assets/files/Resume.pdf" class="btn btn-primary btn-large">View resume &raquo;</a></p>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		
+		</div> <!-- /container -->
+
+		<div class="navbar navbar-fixed-bottom">
+			<div class="navbar-inner">
+				<div class="container" style="width:100%;">
+					<footer style="margin-top: 12px;margin-left: 5px;">
+						<p>&copy; Tronnet 2012</p>
+					</footer>
+				</div>
+			</div>
+		</div> <!-- /container -->
+	</div>
+</script>

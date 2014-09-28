@@ -1,0 +1,19 @@
+@import "mixins.less";
+
+.about-me-sections{
+	overflow: hidden;
+
+	.about-me-section{
+		margin-bottom: 25px;
+		opacity: 0;
+		height: 0px;
+		overflow:hidden;
+	
+		&.about-me-section-closed{
+			.animation(close-about-me-section, 1s);
+		}
+		&.about-me-section-opened{
+			.animation(open-about-me-section, 1s);
+		}
+	}
+}
